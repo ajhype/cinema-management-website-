@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 10px; 
+    height: 60px; /* Reduced navbar height */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff9900; 
+}
+
+.user-profile-nav {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-nav img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.user-profile-nav span {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details {
+    text-align: left;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.review-section h2 {
+    color: #333;
+}

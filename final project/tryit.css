@@ -1,0 +1,405 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home {
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.slogan {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #e8491d;  
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+}
+
+
+.membership-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.membership-btn:hover {
+    background-color: #ff6347;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+ /* Slideshow Section */
+#slideshow {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.slideshow-container {
+    max-width: 80%; 
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    animation: fade 1.5s ease-in-out infinite;
+}
+
+.slideshow-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.image-text {
+    margin-top: 20px;
+}
+
+.image-text h3 {
+    color: #e8491d;  
+    font-size: 1.5em;
+}
+
+.image-text p {
+    font-size: 1em;
+    color: #555;
+}
+
+@keyframes changeSlide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mySlides.change {
+    animation: changeSlide 1.5s ease-in-out infinite;
+}
+
+/* background video */
+.background-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#movies {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.movie-pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.movie:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+}
+ /*"Book Now" link and hover effect */
+.movie {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: #ddd;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-now-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a2dca;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie:hover .book-now-link {
+    opacity: 1;
+}
+
+.movie:hover {
+    transform: scale(1.1);
+}
+
+.movie-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+#upcoming-movies {
+    text-align: center;
+    padding: 100px 0;
+}
+.upcoming-heading-box {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #e8491d;  
+    padding: 10px;
+    border-radius: 5px;
+}
+.upcoming-heading {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #e8491d;  
+}
+
+.upcoming-pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Movie Sections Container */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*others*/
+
+
+  
+  .logo img {
+    width: 40px; 
+    height: auto;  
+    margin-right: 10px; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: #e8491d;
+    border-color: #e8491d;
+}
+.now-showing {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #e8491d; 
+}
+/*Membership Benefits section */
+#membership {
+    background-color: #f0f0f0; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+.membership-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #e8491d;  
+}
+/*button*/
+.join-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+.join-button:hover {
+    background-color: #c1381d;
+}
+
+.membership-benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.benefit {
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.benefit-text {
+    font-size: 0.9em;
+    color: #333;
+}
+
+ /*footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    color: #e8491d;  
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #e8491d;  
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 40px;  
+    height: auto;  
+    margin-right: 10px;  
+  }
+  
+   
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;  
+    padding: 10px 20px;  
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;  
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;  
+    font-size: 1rem;
+    font-weight: bold;
+  }
+   
+  a:hover {
+    color: #ff9900;  
+  }
+  
